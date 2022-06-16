@@ -10,7 +10,8 @@ const getMember = {
 const addMember = {
     body: Joi.object({
         name: Joi.string().required(),
-        address: Joi.string().required()
+        address: Joi.string().required(),
+        email: Joi.string().required()
     })
 };
 
@@ -20,7 +21,8 @@ const updateMember = {
     }),
     body: Joi.object({
         name: Joi.string().required(),
-        address: Joi.string().required()
+        address: Joi.string().required(),
+        email: Joi.string().required()
     })
 };
 
